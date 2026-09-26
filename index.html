@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8">
+<title>Security research PoC - dangling DNS</title></head>
+<body style="font-family:system-ui;max-width:700px;margin:60px auto;line-height:1.6">
+<h1>Subdomain takeover PoC</h1>
+<p>Benign proof-of-concept on a dangling Dodo Brands subdomain
+(<code>www.dodopizza.org</code> &rarr; <code>dodopizza.github.io</code>).</p>
+<p>Authorized security research, reported via the Dodo Brands bug bounty programme.
+Researcher: <b>thxStuck</b>. No data is collected on this page.</p>
+<p>Remediation: remove the dangling DNS record or re-claim the hostname.</p>
+<pre id="out"></pre>
+<script>document.getElementById('out').textContent="origin: "+location.origin+" | host: "+location.host;</script>
+</body></html>
